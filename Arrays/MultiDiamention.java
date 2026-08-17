@@ -3,7 +3,6 @@ package Arrays;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class MultiDiamention {
 
     public static void main(String[] args) {
 
