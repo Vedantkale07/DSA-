@@ -1,5 +1,7 @@
 package Arrays;
 
+import com.sun.security.jgss.GSSUtil;
+
 import java.util.Arrays;
 
 public class SearchIn2DArray {
@@ -7,13 +9,16 @@ public class SearchIn2DArray {
     public static void main(String[] args) {
         int[][] arr = {
                 {1, 2, 3},
-                {4, 5, 6},
-                {9, 8, 7}
+                {4, 5, 61,11},
+                {9, 8, 77}
         };
 
-        int target = 2;
+        int target = 11;
         int [] ans= search(arr,target);
+
         System.out.println(Arrays.toString(ans));
+
+        System.out.println(searchMax(arr));
 
     }
 
@@ -28,6 +33,22 @@ public class SearchIn2DArray {
 
         }
         return new int[]{-1,-1};
+    }
+
+    static int searchMax(int [][] arr){
+        int max=Integer.MIN_VALUE;
+        for (int[] ints : arr) {
+            for (int element : ints) {
+                if (element > max) {
+                    max = element;
+
+                }
+
+            }
+
+        }
+
+        return max;
     }
 }
 
