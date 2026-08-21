@@ -2,7 +2,7 @@ package Arrays;
 
 import java.util.Arrays;
 
-public class Swap {
+public class SwapArray {
 
     public static void main(String[] args) {
 
